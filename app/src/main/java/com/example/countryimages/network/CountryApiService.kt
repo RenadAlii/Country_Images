@@ -1,6 +1,7 @@
 package com.example.countryimages.network
 
 import com.example.countryimages.model.CountryPhoto
+import com.example.countryimages.model.DataCountry
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
