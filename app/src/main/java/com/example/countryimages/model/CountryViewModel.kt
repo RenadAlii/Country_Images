@@ -23,8 +23,8 @@ class CountryViewModel : ViewModel() {
     private fun getCountryPhotos() {
         viewModelScope.launch {
             try {
-                val listResult = CountryApi.retrofitService.getPhotos()
-                _status.value = "Success: ${listResult.size} flag photos retrieved"
+                val resp = CountryApi.retrofitService.getPhotos()
+                _status.value = "Success: ${resp.data.size} flag photos retrieved"
             } catch (e: Exception) {
                 _status.value = "Failure: ${e.message}"
 
