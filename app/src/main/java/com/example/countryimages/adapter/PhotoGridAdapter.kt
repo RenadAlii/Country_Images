@@ -14,7 +14,7 @@ class PhotoGridAdapter: ListAdapter<DataCountry,
             class ItemViewHolder(var binding: GridViewItemBinding)
                 :RecyclerView.ViewHolder(binding.root){
                 fun bind(flagPhoto: DataCountry){
-                    binding.photo = flagPhoto
+                    binding.data = flagPhoto
                     //update immediately
                     binding.executePendingBindings()
                 }
